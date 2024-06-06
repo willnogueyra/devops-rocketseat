@@ -11,7 +11,7 @@ COPY . .
 RUN npm run build
 RUN npm ci --production && npm cache clean --force
 
-FROM node:18-alpine3.20
+FROM node:18-alpine3.19
 
 WORKDIR /usr/src/app
 
